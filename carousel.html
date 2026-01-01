@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carousel</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
   </head>
   <body>
-    <script src="carousel.js"></script>
+    <div class="carousel_wrapper">
+      <svg
+        class="arrow arrow-left"
+        xmlns="http://www.w3.org/2000/svg"
+        width="75"
+        height="87"
+        viewBox="0 0 75 87"
+        fill="none"
+      >
+        <path d="M0 43.3013L75 0V86.6025L0 43.3013Z" fill="var(--pink2)" />
+      </svg>
+
+      <div class="project_carousel">
+        <div class="carousel_track">
+          <div class="project_name">
+            <h1>Project name</h1>
+            <img src="img/test.webp" alt="test" />
+            <h2>Tema beskrivelse</h2>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="arrow arrow-right"
+        xmlns="http://www.w3.org/2000/svg"
+        width="75"
+        height="87"
+        viewBox="0 0 75 87"
+        fill="none"
+      >
+        <path d="M75 43.3013L0 86.6025V0L75 43.3013Z" fill="#FDD1EB" />
+      </svg>
+    </div>
+    <script src="js/carousel.js"></script>
   </body>
 </html>

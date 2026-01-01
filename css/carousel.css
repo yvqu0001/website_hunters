@@ -1,0 +1,22 @@
+.carousel_wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  justify-self: center;
+}
+
+.arrow {
+  max-width: 40px;
+}
+
+.project_name {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_name img {
+  max-width: 700px;
+}

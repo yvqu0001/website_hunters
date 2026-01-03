@@ -77,3 +77,10 @@ p {
 .return_button {
   display: inline-block;
 }
+
+@media (max-width: 425px) {
+  :root {
+    --h1-size: clamp(2.4rem, 7vw, 6.5rem);
+    --h2-size: clamp(1.8rem, 3.5vw, 3.2rem);
+  }
+}

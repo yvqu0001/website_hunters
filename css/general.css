@@ -20,8 +20,8 @@
   --font-style-italic: italic;
 
   /* font size !!!!!!!!!!!!!!!!!!!!!!*/
-  --h1-size: 12rem;
-  --h2-size: 6rem;
+  --h1-size: clamp(3rem, 8vw, 8rem);
+  --h2-size: clamp(2rem, 4vw, 4rem);
   --h3-size: 3rem;
   --h4-size: 4rem;
   --p-size: 1.25rem;
@@ -68,4 +68,12 @@ p {
   font-size: var(--p-size);
   color: var(--pink1);
   font-weight: var(--font-weight-regular);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.return_button {
+  display: inline-block;
 }

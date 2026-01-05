@@ -4,11 +4,12 @@
 :root {
   /* colors */
   --purple: #e3d2f6;
+  --blue: #bcebfb;
   --pink1: #ffe8f4;
   --pink2: #fdd1eb;
   --pink3: #feb3de;
   --pink4: #fb9ccc;
-  --pink5: #faa4c6;
+  --pink5: #ff6cb8;
 
   /* font */
   --font-normal: "Tomorrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,6 +30,23 @@
 
 html {
   background-color: var(--pink4);
+  background: url(../img/SVG/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  height: 100%;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  /* maybe change darken color */
+  background: rgba(119, 29, 74, 0.4);
+  z-index: -1;
+  pointer-events: none;
 }
 
 h1 {
@@ -63,7 +81,8 @@ h4 {
   font-weight: var(--font-weight-regular);
 }
 
-p {
+p,
+.cta_btn {
   font-family: var(--font-normal);
   font-size: var(--p-size);
   color: var(--pink1);
@@ -76,6 +95,10 @@ p {
 
 .return_button {
   display: inline-block;
+}
+
+button {
+  border: none;
 }
 
 @media (max-width: 425px) {
